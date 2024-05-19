@@ -10,4 +10,7 @@ public interface CatMapper {
 
     @Select("SELECT * FROM cats")
     List<Cat> findAll();
+
+    @Select("SELECT * FROM cats WHERE coats LIKE CONCAT('%', #{coats}, '%')")
+    List<Cat> findByCoats(String coats);
 }
