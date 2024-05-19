@@ -1,13 +1,13 @@
-DROP TABLE IF EXISTS cat_breeds_and_coats;
+DROP TABLE IF EXISTS cats;
 
-CREATE TABLE cat_breeds_and_coats (
+CREATE TABLE cats (
  id int unsigned AUTO_INCREMENT,
  breed VARCHAR(50) NOT NULL,
  coats VARCHAR(50) NOT NULL,
  PRIMARY KEY(id)
 );
 
-INSERT INTO cat_breeds_and_coats (breed, coats) VALUES
+INSERT INTO cats (breed, coats) VALUES
 ("American Shorthair", "Short"),
 ("Maine Coon", "Long"),
 ("Scottish Fold", "Short"),

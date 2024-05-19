@@ -8,6 +8,6 @@ import java.util.List;
 @Mapper
 public interface CatMapper {
 
-    @Select("SELECT * FROM cat_breeds_and_coats")
+    @Select("SELECT * FROM cats")
     List<Cat> findAll();
 }
